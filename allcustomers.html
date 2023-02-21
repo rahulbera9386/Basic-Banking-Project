@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="allcustomers.css">
+  <title>Customers Details</title>
+</head>
+<body>
+  <div class="container">
+    <button class="view-all-btn">Our Customers</button>
+    <button id="send-money-btn">Send Money</button>
+
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Send Money</h2>
+        <form>
+          <label for="sender-name" id="enterName">Sender Name:</label>
+          <input type="text" id="sender-name" name="sender-name">
+          <label for="receiver-acct-num">Sender Account Number:</label>
+          <input type="text" id="sender-acct-num" name="sender-acct-num">
+          <label for="receiver-name" id="enterName">Receiver Name:</label>
+          <input type="text" id="receiver-name" name="receiver-name">
+          <label for="receiver-acct-num">Receiver Account Number:</label>
+          <input type="text" id="receiver-acct-num" name="receiver-acct-num">
+          <label for="amount" id="enterAmount">Amount:</label>
+          <input type="text" id="amount" name="amount">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date">
+          <label for="description">Description:</label>
+          <textarea id="description" name="description"></textarea>
+          <button type="submit" id="send-btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Customer Name</th>
+          <th>Account Number</th>
+          <th>Contact Number</th>
+          <th>Account Balance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Rahul Bera</td>
+          <td>35000320024</td>
+          <td>+91 9382898643</td>
+          <td>56,000</td>
+        </tr>
+        <tr>
+          <td>Dipankar Pariyari</td>
+          <td>35000120045</td>
+          <td>+91 8972241218</td>
+          <td>78,000</td>
+        </tr>
+        <tr>
+          <td>Subhajit Basanata</td>
+          <td>35000120058</td>
+          <td>+91 6297782173</td>
+          <td>66,000</td>
+        </tr>
+        <tr>
+          <td>Sudip Khanda</td>
+          <td>35000320055</td>
+          <td>+91 8637906543</td>
+          <td>23,000</td>
+        </tr>
+        <tr>
+          <td>Arnab Pratihar</td>
+          <td>35000120056</td>
+          <td>+91 9732045632</td>
+          <td>67,000</td>
+        </tr>
+        <tr>
+          <td>Souvik Ghosh</td>
+          <td>35000320045</td>
+          <td>+91 9647653890</td>
+          <td>54,000</td>
+        </tr>
+        <tr>
+          <td>Shreyasi Chakraborty</td>
+          <td>35000120045</td>
+          <td>+91 9835784178</td>
+          <td>70,000</td>
+        </tr>
+        <tr>
+          <td>Tanya Bose</td>
+          <td>35000120042</td>
+          <td>+91 8938972502</td>
+          <td>98,000</td>
+        </tr>
+        <tr>
+          <td>Nilanjan Senapati</td>
+          <td>35000120075</td>
+          <td>+91 9775538528</td>
+          <td>54,000</td>
+        </tr>
+        <tr>
+          <td>Puja Rathi</td>
+          <td>35000320046</td>
+          <td>+91 7697462967</td>
+          <td>65,000</td>
+        </tr>
+        <tr>
+          <td>Agnik Senapati</td>
+          <td>35000320063</td>
+          <td>+91 7645093490</td>
+          <td>23,000</td>
+        </tr>
+        <tr>
+          <td>Madhurima Pati</td>
+          <td>35000320756</td>
+          <td>+91 6578936687</td>
+          <td>87,000</td>
+        </tr>
+        <tr>
+          <td>Raktim Sarkar</td>
+          <td>35000456894</td>
+          <td>+91 7658904723</td>
+          <td>67,000</td>
+        </tr>
+        <tr>
+          <td>Shreya Dey</td>
+          <td>35000320679</td>
+          <td>+91 7643902673</td>
+          <td>67,000</td>
+        </tr>
+        <tr>
+          <td>Rwik Sen</td>
+          <td>35000566479</td>
+          <td>+91 7697892764</td>
+          <td>58,000</td>
+        </tr>
+        <tr>
+          <td>Adarsh Jana</td>
+          <td>35000349099</td>
+          <td>+91 6758937873</td>
+          <td>78,000</td>
+        </tr>
+       
+        <tr>
+          <td>Asmita Sen</td>
+          <td>35000450495</td>
+          <td>+91 6296453673</td>
+          <td>46,000</td>
+        </tr>
+        <tr>
+          <td>Shivagni Malhotra</td>
+          <td>35000230008</td>
+          <td>+91 6298763454</td>
+          <td>45,000</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+  
+  <script src="sendmoney.js"></script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar Section  */
+.navbar {
+  background: #131313;
+  padding: 15px 125px !important;
+  z-index: 100;
+}
+.navbar .navbar-brand {
+  font-size: 24px;
+  font-weight: 700;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a {
+  color: #fff;
+  font-size: 20px;
+  padding:0 22px;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover {
+  color: #00bf85;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a.active {
+  color: #00bf7f;
+}
+#navbarSupportedContent > button {
+  background: #00bf85;
+  font-weight: 600;
+  padding: 8px 24px;
+  border-radius: 30px;
+}
+
+/* Front Section  */
+.mid {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.mid video {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mid .hero {
+  position: relative;
+}
+.mid .hero p {
+  width: 55%;
+  font-size: 24px;
+  padding-bottom: 18px;
+}
+.mid .hero a {
+  background: #00bf85;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+.mid .hero a:hover {
+  background-color: #fff;
+}
+
+/* About Section  */
+.about {
+  background: #000;
+}
+.about .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+}
+.about .text h1 {
+  color: #f7f5f4;
+  font-weight: 700;
+  font-size: 45px;
+}
+.about .text ul li {
+  color: #f7f5f4;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+.about .text a {
+  background: #00fb85;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #111;
+}
+
+/* Discover Section  */
+.discover {
+  background: #fff;
+}
+.discover .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+}
+.discover .text h6 {
+  color: #00bf7f;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+.discover .text h2 {
+  font-weight: 700;
+  font-size: 45px;
+}
+.discover .text p {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+.discover .text a {
+  background: #111;
+  font-weight: 500;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Service Section  */
+.service {
+  background: #000;
+}
+.service .card {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 32px 24px;
+  border-radius: 10px;
+}
+/* About Us Section*/
+#about-us {
+  background-color: #F2F2F2;
+  padding: 50px;
+  text-align: center;
+}
+
+#about-us h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+#about-us div {
+  line-height: 1.5;
+  color: #666;
+  font-size: 18px !important;
+}
+#about-us p{
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #about-us {
+    padding: 25px;
+  }
+ 
+  #about-us h2 {
+    font-size: 24px;
+  }
+ 
+  #about-us p {
+    font-size: 16px;
+  }
+}
+/*Contact Us Section */
+.contact-section{
+  background:no-repeat center;
+  background-size: cover;
+  padding: 40px 0;
+}
+.contact-section h1{
+  text-align: center;
+  color: #ddd;
+}
+.border{
+  width: 100px;
+  height: 10px;
+  background: #34495e;
+  margin: 40px auto;
+}
+
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+.contact-form-text:focus{
+  box-shadow: 0 0 10px 4px #34495e;
+}
+textarea.contact-form-text{
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn{
+  text-align: center;
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover{
+  background: #2980b9;
+}
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer-content {
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-content p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.socials li {
+  margin-right: 10px;
+}
+
+.socials a {
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.socials a:hover {
+  color: #333;
+}
+
+.footer-bottom {
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive with Media Screen  */
+@media screen and (max-width: 988px) {
+  /* Navbar Section  */
+  .navbar {
+    padding: 15px !important;
+  }
+  #navbarSupportedContent > ul {
+    padding-left: 12px;
+  }
+  #navbarSupportedContent > ul > li:nth-child(n) > a {
+    padding: 12px 0;
+  }
+  /* Hero Section  */
+  .mid {
+    padding-top: 60px;
+  }
+  .mid .hero p {
+    width: 85%;
+    font-size: 14px;
+    padding-bottom: 25px;
+  }
+
+  /* About Section  */
+  .about .text h6 {
+    font-size: 14px;
+  }
+  .about .text h2 {
+    font-size: 25px;
+  }
+  .about .text p {
+    font-size: 14px;
+    padding: 15px 0;
+  }
+
+  /* Discover Section  */
+  .discover .text h6 {
+    font-size: 14px;
+  }
+  .discover .text h2 {
+    font-size: 25px;
+  }
+  .discover .text p {
+    font-size: 14px;
+    padding: 15px 0;
+  }
+  #about-us {
+    padding: 1em;
+  }
+ 
+  #about-us h2 {
+    font-size: 1.5em;
+  }
+ 
+  #about-us p {
+    font-size: 1em;
+  }
+  
+}
